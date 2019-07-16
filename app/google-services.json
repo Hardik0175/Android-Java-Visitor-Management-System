@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "117977341689",
+    "firebase_url": "https://newvisitors-459da.firebaseio.com",
+    "project_id": "newvisitors-459da",
+    "storage_bucket": "newvisitors-459da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117977341689:android:c5282b5485068369",
+        "android_client_info": {
+          "package_name": "com.studentshield.shield.visitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117977341689-0arm0037hkafa0hmmf9apagok4rtvtd3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.studentshield.shield.visitor",
+            "certificate_hash": "7f88dcfd1adcf6f491ff8b8d27b9001aa2740715"
+          }
+        },
+        {
+          "client_id": "117977341689-8f6uimdq19v1b2hop8ioviopdj20kgru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0ZjKch6LGJNobluw2mjEDuEkh-v2Wwt8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117977341689-8f6uimdq19v1b2hop8ioviopdj20kgru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

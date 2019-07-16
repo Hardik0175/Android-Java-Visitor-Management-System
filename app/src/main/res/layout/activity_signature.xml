@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context="com.studentshield.shield.visitor.SignatureActivity">
+
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/signature_pad"
+        android:layout_width="390dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="300dp"
+        app:penColor="@android:color/black"
+        app:clearOnDoubleClick="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for visiting!"
+        android:textSize="25sp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digital Impact Square (DISQ) is an online platform and a physical location at Nashik, Maharashtra. Students, young startups, and budding entrepreneurs from across India can participate at DISQ. It is an open social innovation platform designed to enhance the lives of citizens. The platform encourages innovation using digital technologies, to address the needs of citizens through their voice and that of the local administration, government, and industry."
+        android:textSize="15sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:id="@+id/button_clr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="73dp"
+        android:text="CLEAR" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="DONE" />
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinnerTarget"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="19sp"
+    android:textColorHint="#0087F8"
+    android:background="@drawable/button"
+    android:textColor="#0087F8"
+    android:padding="8dp"
+    android:gravity="center"
+    android:textAlignment="center" />

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:background="#0087F8"
+    tools:context="com.studentshield.shield.visitor.HostDetailsActivity"
+    android:orientation="vertical">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/backhost"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="20dp"
+        android:background="#0087F8"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_defaultColor="#FFFFFF"
+        fancy:fb_focusColor="#8cc9f8"
+        fancy:fb_iconPosition="right"
+        fancy:fb_iconResource="@drawable/backarrow"
+        fancy:fb_radiusBottomRight="10dp"
+        fancy:fb_radiusTopLeft="10dp"
+        fancy:fb_text=""
+        fancy:fb_textColor="#FFFFFF"/>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/hostheadin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="WHOM TO VISIT"
+        android:textSize="33sp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+    android:layout_gravity="left"
+    android:id="@+id/incypu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+    android:text="Hi "
+    android:textSize="20sp"
+    android:textColor="#FFFFFF" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/whomtovisit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:backgroundTint="@color/basicRed"
+            android:clickable="true"
+            android:dropDownWidth="fill_parent"
+            android:focusableInTouchMode="true"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/no_of_stu"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you  + "
+            android:textSize="20sp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/decrease"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#06629D"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:onClick="decreaseInteger"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/integer_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:background="#FFFFFF"
+            android:textSize="30sp"
+            android:textColor="#12354C"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/increase"
+            android:onClick="increaseInteger"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#06629D"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:text="+" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/Purpose_view2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:backgroundTint="@color/basicRed"
+            android:clickable="true"
+            android:dropDownWidth="fill_parent"
+            android:focusableInTouchMode="true"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+
+
+
+        <EditText
+            android:id="@+id/nameofpurpose"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textEmailAddress"
+            android:hint=" * Please specify your purpose of visit " />
+
+
+
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/nexttosign"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="13dp"
+                android:padding="10dp"
+                fancy:fb_defaultColor="#FFFFFF"
+                fancy:fb_focusColor="#8cc9f8"
+                fancy:fb_iconResource="@drawable/newarrow"
+                fancy:fb_radius="64dp">
+
+            </mehdi.sakout.fancybuttons.FancyButton>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
